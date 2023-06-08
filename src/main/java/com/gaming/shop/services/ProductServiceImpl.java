@@ -1,4 +1,8 @@
 package com.gaming.shop.services;
 
-public class ProductServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
 }
