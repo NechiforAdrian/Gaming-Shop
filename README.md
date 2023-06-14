@@ -6,11 +6,17 @@ It provides a platform for customers to browse and purchase gaming products.
 The Gaming Shop project utilizes the following technologies:
 
 ⚪ Java
+
 ⚪ Spring Boot
+
 ⚪ Java 17
+
 ⚪ Maven
+
 ⚪ PostgreSQL
+
 ⚪ H2 in-memory database
+
 ⚪ Hibernate as ORM
 
 ## Prerequisites
