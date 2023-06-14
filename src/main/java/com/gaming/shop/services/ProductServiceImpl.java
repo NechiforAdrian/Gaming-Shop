@@ -32,7 +32,7 @@ public class ProductServiceImpl implements ProductService {
     public ProductDTO createProduct(ProductDTO productDTO) {
         Product product = objectMapper.convertValue(productDTO, Product.class);
         Product savedProduct = productRepository.save(product);
-        log.info("Product " + savedProduct.getProductBrand() + " was created!");
+        log.info("Product " + savedProduct.getProductName() + " was created!");
         return objectMapper.convertValue(savedProduct, ProductDTO.class);
     }
 

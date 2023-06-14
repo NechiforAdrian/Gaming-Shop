@@ -1,6 +1,7 @@
 package com.gaming.shop.controllers;
 
 import com.gaming.shop.models.dtos.OrderDTO;
+import com.gaming.shop.models.entities.Order;
 import com.gaming.shop.services.OrderService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,9 @@ public class OrderController {
         this.orderService = orderService;
     }
 
-    @PostMapping
-    public ResponseEntity<OrderDTO> createOrder(@RequestBody @Valid OrderDTO orderDTO) {
-        return ResponseEntity.ok(orderService.createOrder(orderDTO));
+    @PostMapping("/{id}")
+    public ResponseEntity<OrderDTO> createOrder(@PathVariable long id, @RequestBody OrderDTO orderDTO) {
+        return ResponseEntity.ok(orderService.createOrder(id, orderDTO));
     }
 
     @GetMapping
