@@ -13,6 +13,5 @@ public class ProductDTO {
     private String productBrand;
     @NotBlank(message = "Color must not be blank!")
     private String colour;
-    @NotBlank(message = "Price is a mandatory field!")
     private double price;
 }
